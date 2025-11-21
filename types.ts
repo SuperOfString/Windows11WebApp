@@ -1,6 +1,6 @@
 import { LucideIcon } from 'lucide-react';
 
-export type AppID = 'explorer' | 'edge' | 'word' | 'powerpoint' | 'calculator' | 'calendar' | 'copilot' | 'settings' | 'videoplayer';
+export type AppID = 'explorer' | 'edge' | 'word' | 'excel' | 'powerpoint' | 'calculator' | 'calendar' | 'copilot' | 'settings' | 'videoplayer' | 'photos';
 
 export interface AppConfig {
   id: AppID;

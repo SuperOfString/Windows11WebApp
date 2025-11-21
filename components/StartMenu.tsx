@@ -13,7 +13,7 @@ const StartMenu: React.FC<StartMenuProps> = ({ isOpen, apps, onAppClick }) => {
   if (!isOpen) return null;
 
   // Define grid apps for the start menu
-  const pinnedApps: AppID[] = ['edge', 'word', 'powerpoint', 'explorer', 'videoplayer', 'calendar', 'calculator', 'copilot', 'settings'];
+  const pinnedApps: AppID[] = ['edge', 'word', 'excel', 'powerpoint', 'explorer', 'videoplayer', 'photos', 'calendar', 'calculator', 'copilot', 'settings'];
 
   return (
     <div className="fixed bottom-14 left-1/2 transform -translate-x-1/2 w-[640px] h-[600px] max-w-[95vw] max-h-[80vh] bg-[#f3f3f3]/95 backdrop-blur-2xl rounded-lg shadow-2xl border border-white/40 z-50 flex flex-col overflow-hidden transition-all animate-in slide-in-from-bottom-10 duration-200">

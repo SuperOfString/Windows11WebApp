@@ -35,7 +35,7 @@ const Taskbar: React.FC<TaskbarProps> = ({
   };
 
   // Pinned apps order
-  const pinnedApps: AppID[] = ['explorer', 'edge', 'word', 'powerpoint', 'videoplayer', 'calendar', 'calculator', 'copilot'];
+  const pinnedApps: AppID[] = ['explorer', 'edge', 'word', 'excel', 'powerpoint', 'videoplayer', 'photos', 'calendar', 'calculator', 'copilot'];
 
   return (
     <div className="fixed bottom-0 left-0 right-0 h-12 bg-[#f3f3f3]/90 backdrop-blur-xl flex items-center justify-between px-3 z-50 border-t border-white/40 shadow-lg">

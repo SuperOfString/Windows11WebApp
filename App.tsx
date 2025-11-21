@@ -9,12 +9,14 @@ import Window from './components/Window';
 // App Components
 import Calculator from './components/apps/Calculator';
 import Word from './components/apps/Word';
+import Excel from './components/apps/Excel';
 import PowerPoint from './components/apps/PowerPoint';
 import Explorer from './components/apps/Explorer';
 import Browser from './components/apps/Browser';
 import CalendarApp from './components/apps/CalendarApp';
 import Copilot from './components/apps/Copilot';
 import VideoPlayer from './components/apps/VideoPlayer';
+import Photos from './components/apps/Photos';
 
 const App: React.FC = () => {
   const [desktopState, setDesktopState] = useState<DesktopState>(INITIAL_STATE);
@@ -121,12 +123,14 @@ const App: React.FC = () => {
     switch (id) {
       case 'calculator': return <Calculator />;
       case 'word': return <Word />;
+      case 'excel': return <Excel />;
       case 'powerpoint': return <PowerPoint />;
       case 'explorer': return <Explorer />;
       case 'edge': return <Browser />;
       case 'calendar': return <CalendarApp />;
       case 'copilot': return <Copilot />;
       case 'videoplayer': return <VideoPlayer />;
+      case 'photos': return <Photos />;
       case 'settings': return <div className="p-8 flex items-center justify-center h-full text-gray-500">Settings are not implemented in this demo.</div>;
       default: return null;
     }

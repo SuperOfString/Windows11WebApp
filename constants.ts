@@ -8,7 +8,9 @@ import {
   Settings,
   FolderClosed,
   Presentation,
-  Video
+  Video,
+  Image,
+  FileSpreadsheet
 } from 'lucide-react';
 import { AppConfig, AppID, DesktopState } from './types';
 
@@ -40,6 +42,15 @@ export const APPS: Record<AppID, AppConfig> = {
     preferredWidth: 900,
     preferredHeight: 700
   },
+  excel: {
+    id: 'excel',
+    title: 'Excel',
+    icon: FileSpreadsheet,
+    color: 'text-green-700',
+    bgColor: 'bg-green-100',
+    preferredWidth: 1000,
+    preferredHeight: 700
+  },
   powerpoint: {
     id: 'powerpoint',
     title: 'PowerPoint',
@@ -57,6 +68,15 @@ export const APPS: Record<AppID, AppConfig> = {
     bgColor: 'bg-purple-100',
     preferredWidth: 800,
     preferredHeight: 600
+  },
+  photos: {
+    id: 'photos',
+    title: 'Photos',
+    icon: Image,
+    color: 'text-blue-500',
+    bgColor: 'bg-blue-100',
+    preferredWidth: 900,
+    preferredHeight: 700
   },
   calculator: {
     id: 'calculator',
@@ -101,12 +121,14 @@ export const INITIAL_STATE: DesktopState = {
     explorer: { id: 'explorer', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 1 },
     edge: { id: 'edge', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 2 },
     word: { id: 'word', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 3 },
-    powerpoint: { id: 'powerpoint', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 4 },
-    videoplayer: { id: 'videoplayer', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 5 },
-    calculator: { id: 'calculator', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 6 },
-    calendar: { id: 'calendar', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 7 },
-    copilot: { id: 'copilot', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 8 },
-    settings: { id: 'settings', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 9 },
+    excel: { id: 'excel', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 4 },
+    powerpoint: { id: 'powerpoint', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 5 },
+    videoplayer: { id: 'videoplayer', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 6 },
+    photos: { id: 'photos', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 7 },
+    calculator: { id: 'calculator', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 8 },
+    calendar: { id: 'calendar', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 9 },
+    copilot: { id: 'copilot', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 10 },
+    settings: { id: 'settings', isOpen: false, isMinimized: false, isMaximized: false, zIndex: 11 },
   },
   activeWindowId: null,
   isStartMenuOpen: false,
