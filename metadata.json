@@ -1,0 +1,5 @@
+{
+  "name": "Windows 11 WebApp",
+  "description": "A web-based Windows 11 desktop simulation featuring File Explorer, Browser, Calculator, Word, Calendar, and an AI Copilot.",
+  "requestFramePermissions": []
+}
